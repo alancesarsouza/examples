@@ -1,11 +1,9 @@
 import React from 'react';
 
-const Async = () => {
-  return (
-    <div>
-      Async
-    </div>
-  )
-};
+const Async = () => (
+  <div>
+    Async
+  </div>
+);
 
 export default Async;

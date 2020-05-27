@@ -1,16 +1,16 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-import { routes } from '../config/constants'
+import { routes, messages } from '../config/constants';
+import Box from '../components/styles/Box';
+import Typography from '../components/styles/Typography';
 
-const StartPage = () => {
-  return (
-    <div>
-        <Link to={routes.async}>
-          <h3>Chamas Assincronas</h3>
-        </Link>
-    </div>
-  )
-}
+const StartPage = () => (
+  <Box backgroundColor='secondary'>
+    <Link to={routes.async}>
+      <Typography color='primary' variant='button'>{messages.pages.async}</Typography>
+    </Link>
+  </Box>
+);
 
-export default StartPage
+export default StartPage;

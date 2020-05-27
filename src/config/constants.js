@@ -1,3 +1,6 @@
+
+import messages from './messages';
+
 const project = '/projeto';
 
 const routes = {
@@ -5,6 +8,10 @@ const routes = {
   async: `${project}/assincronas`,
 };
 
-export {
+export { routes };
+export { messages };
+
+export default {
+  messages,
   routes,
 };
