@@ -25,7 +25,7 @@ module.exports = {
         "react-hooks",
     ],
     "rules": {
-        'indent': ['error', 2], // 2 spaces indentation
+        'indent': ['error', 2, { SwitchCase: 1 }], // 2 spaces indentation
         'linebreak-style': ['error', 'unix'], // \n instead of \r\n
         'quotes': ['error', 'single'], // single quotes preferred
         'semi': ['error', 'always'], // always use semicolons

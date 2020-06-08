@@ -1,9 +1,10 @@
 export default {
   start: {
-    title: 'Pagina Inicial',
+    title: 'Página Inicial',
   },
   pages: {
     async: 'Chamadas Assíncronas',
+    casl: 'Exemplo CASL',
   },
   words: {
     back: 'Voltar',

@@ -4,9 +4,11 @@ import PropTypes from 'prop-types';
 import Box from '../../components/styles/Box';
 import Header from './Header';
 
+import { messages } from '../../config/constants';
+
 const Initial = ({ children }) => (
   <>
-    <Header />
+    <Header title={messages.start.title} />
     <Box
       display='flex'
       p={4}
