@@ -1,12 +1,16 @@
 export default {
   start: {
-    title: 'Página Inicial',
+    title: "Página Inicial",
   },
   pages: {
-    async: 'Chamadas Assíncronas',
-    casl: 'Exemplo CASL',
+    register: "Página de registro",
+    projects: "Página de projetos",
+  },
+  projects: {
+    async: "Chamadas Assíncronas",
+    casl: "Exemplo CASL",
   },
   words: {
-    back: 'Voltar',
+    back: "Voltar",
   },
 };

@@ -2,13 +2,17 @@
 import messages from './messages';
 
 export const NAME_APPLICATION = 'EXAMPLES_APPLICATION';
-const project = '/projeto';
+const register = '/register'
+const projects = '/projects'
+
 
 const routes = {
-  project,
-  async: `${project}/assincronas`,
-  componentsPage: `${project}/components`,
+  projects,
+  async: `${projects}/assincronas`,
+  register,
+  login: `${register}/login`
 };
+
 
 export { routes };
 export { messages };

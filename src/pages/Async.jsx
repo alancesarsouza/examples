@@ -20,7 +20,7 @@ const Async = () => {
   }, [app, dispatch]);
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', background: 'blue' }}>
       <div>
         <button onClick={execute}>CLICK</button>
         <pre>{app && JSON.stringify(app, null, 2)}</pre>

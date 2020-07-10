@@ -6,7 +6,7 @@ import Box from '../../components/styles/Box';
 import Typography from '../../components/styles/Typography';
 
 const Header = ({ title }) => (
-  <Box.Header display='flex' justifyContent='space-evenly'>
+  <Box.Header display='flex' justifyContent='space-evenly'  >
     <Link to='/'>
       <Typography variant='h2'>
         {title}

@@ -5,6 +5,7 @@ import Box from '../../components/styles/Box';
 import Header from './Header';
 
 import { messages } from '../../config/constants';
+import { backgroundColor } from 'styled-system';
 
 const Initial = ({ children }) => (
   <>
@@ -12,8 +13,8 @@ const Initial = ({ children }) => (
     <Box
       display='flex'
       p={4}
-      backgroundColor='gray5'
       borderRadius={4}
+      style={{backgroundColor: 'red'}}
     >
       {children}
     </Box>

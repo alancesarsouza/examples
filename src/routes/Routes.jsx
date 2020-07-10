@@ -1,21 +1,17 @@
-import React from 'react';
-import { Route, Switch, Redirect } from 'react-router-dom';
+import React from "react";
+import { Route, Switch, Redirect } from "react-router-dom";
 
-import Async from '../pages/Async';
-import StartPage from '../pages/StartPage';
-import InitilaLayout from '../pages/layout/Initial';
-import { routes } from '../config/constants';
-
+import Async from "../pages/Async";
+import StartPage from "../pages/StartPage";
+import RegisterRoutes from "../pages/RegisterRoutes";
+import ProjectsRoutes from "../pages/ProjectsRoutes"
+import { routes } from "../config/constants";
 
 const Routes = () => (
   <Switch>
-    <InitilaLayout>
-      <Route exact path='/'>
-        <Redirect to={routes.project} />
-      </Route>
-      <Route exact path={routes.project} component={StartPage} />
-      <Route path={routes.async} component={Async} />
-    </InitilaLayout>
+    <Route exact path="/" component={StartPage} />
+    <Route path={routes.register} component={RegisterRoutes} />
+    <Route path={routes.projects} component={ProjectsRoutes} />
   </Switch>
 );
 
